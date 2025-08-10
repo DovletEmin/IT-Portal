@@ -1,4 +1,4 @@
-# IT-Portal Backend
+# IT-Portal
 
 Backend API для портала новостей (текстовых и видео), реализованный на Django и Django REST Framework с использованием PostgreSQL.
 
@@ -50,4 +50,5 @@ python manage.py runserver
   /api/text-news/ — Текстовые новости (GET, POST, PUT, DELETE)
 
   /api/video-news/ — Видео новости (GET, POST, PUT, DELETE)
+
 
