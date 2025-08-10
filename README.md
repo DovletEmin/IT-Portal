@@ -23,5 +23,30 @@ IT-Portal — это REST API, предоставляющее функциона
 ### Клонирование репозитория
 
 ```bash
-git clone <URL_репозитория>
+git clone [<URL_репозитория>](https://github.com/DovletEmin/IT-Portal.git)
 cd it-portal
+
+python -m venv venv
+source venv/bin/activate        # Linux / MacOS
+venv\Scripts\activate           # Windows
+
+pip install -r requirements.txt
+
+Настройка базы данных
+  1. Убедитесь, что PostgreSQL запущен и создана база данных, пользователь с правами.
+  2. Отредактируйте settings.py для подключения к вашей БД.
+
+python manage.py migrate
+
+python manage.py runserver
+```
+---
+
+## Использование API
+  Документация доступна по адресу: http://localhost:8000/swagger/
+
+### Основные эндпоинты:
+
+  /api/text-news/ — Текстовые новости (GET, POST, PUT, DELETE)
+
+  /api/video-news/ — Видео новости (GET, POST, PUT, DELETE)
