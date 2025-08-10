@@ -1,0 +1,62 @@
+
+---
+
+# .gitignore
+
+```gitignore
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+ENV/
+*.env
+
+# Django
+*.log
+*.pot
+*.pyc
+db.sqlite3
+
+# Media files (если хочешь игнорировать загруженные файлы)
+media/
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# PyCharm
+.idea/
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# MyPy
+.mypy_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# pipenv
+Pipfile.lock
+
+# pytest
+.cache/
+.pytest_cache/
+
+# Docker
+*.dockerfile
+docker-compose.override.yml
+
