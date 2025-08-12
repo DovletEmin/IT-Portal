@@ -13,14 +13,14 @@ class BaseNews(models.Model):
 
 class TextNews(BaseNews):
     description = models.TextField()
-    image = models.ImageField(upload_to='news_images/')
+    image = models.ImageField(upload_to='news_images/', blank=True, null=True)
 
     def __str__(self):
         return self.title
     
 
 class VideoNews(BaseNews):
-    video = models.FileField(upload_to='news_videos/')
+    video = models.FileField(upload_to='news_videos/', blank=True, null=True)
 
     def __str_(self):
         return self.title
