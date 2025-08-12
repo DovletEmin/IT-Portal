@@ -23,7 +23,7 @@ Backend API для портала новостей (текстовых и вид
 ### Клонирование репозитория
 
 ```bash
-git clone [<URL_репозитория>](https://github.com/DovletEmin/IT-Portal.git)
+git clone https://github.com/DovletEmin/IT-Portal.git
 cd it-portal
 
 python -m venv venv
