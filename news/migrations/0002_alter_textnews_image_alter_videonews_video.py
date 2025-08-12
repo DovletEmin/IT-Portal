@@ -13,11 +13,11 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='textnews',
             name='image',
-            field=models.ImageField(blank=True, null=True, upload_to='news_images/'),
+            field=models.ImageField(upload_to='news_images/'),
         ),
         migrations.AlterField(
             model_name='videonews',
             name='video',
-            field=models.FileField(blank=True, null=True, upload_to='news_videos/'),
+            field=models.FileField(upload_to='news_videos/'),
         ),
     ]
