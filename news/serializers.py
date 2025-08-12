@@ -4,7 +4,7 @@ from .models import TextNews, VideoNews
 class TextNewsSerializer(serializers.ModelSerializer):
     class Meta:
         model = TextNews
-        fields = ['title', 'category', 'description', "image"]
+        fields = ['id', 'title', 'category', 'description', "image"]
 
     def get_fields(self):
         fields = super().get_fields()
@@ -17,7 +17,7 @@ class TextNewsSerializer(serializers.ModelSerializer):
 class VideoNewsSerializer(serializers.ModelSerializer):
     class Meta:
         model = VideoNews
-        fields = ['title', 'category', "video"]
+        fields = ['id', 'title', 'category', "video"]
 
     def get_fields(self):
         fields = super().get_fields()
