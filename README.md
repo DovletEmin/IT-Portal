@@ -24,6 +24,7 @@ Backend API для портала новостей (текстовых и вид
 
 ```bash
 git clone https://github.com/DovletEmin/IT-Portal.git
+
 cd it-portal
 
 python -m venv venv
