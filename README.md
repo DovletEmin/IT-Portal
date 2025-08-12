@@ -48,8 +48,8 @@ python manage.py runserver
 
 ### Основные эндпоинты:
 
-  /api/text-news/ — Текстовые новости (GET, POST, PUT, DELETE)
+  /api/text-news/ — Текстовые новости (GET, POST, PATCH, DELETE)
 
-  /api/video-news/ — Видео новости (GET, POST, PUT, DELETE)
+  /api/video-news/ — Видео новости (GET, POST, PATCH, DELETE)
 
 
